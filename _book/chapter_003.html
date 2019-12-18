@@ -1,0 +1,579 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>if语句和while循环 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter_004.html" />
+    
+    
+    <link rel="prev" href="chapter_002.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter_000.html">
+            
+                <a href="chapter_000.html">
+            
+                    
+                    综述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter_001.html">
+            
+                <a href="chapter_001.html">
+            
+                    
+                    列表List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter_002.html">
+            
+                <a href="chapter_002.html">
+            
+                    
+                    字典Dictionaries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="chapter_003.html">
+            
+                <a href="chapter_003.html">
+            
+                    
+                    if语句和while循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="chapter_004.html">
+            
+                <a href="chapter_004.html">
+            
+                    
+                    函数Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="chapter_005.html">
+            
+                <a href="chapter_005.html">
+            
+                    
+                    类Class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="chapter_006.html">
+            
+                <a href="chapter_006.html">
+            
+                    
+                    文件和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >if语句和while循环</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="if&#x8BED;&#x53E5;&#x548C;while&#x5FAA;&#x73AF;">if&#x8BED;&#x53E5;&#x548C;while&#x5FAA;&#x73AF;</h1>
+<h4 id="&#x4EC0;&#x4E48;&#x662F;if&#x8BED;&#x53E5;&#xFF0C;while&#x5FAA;&#x73AF;&#xFF1F;">&#x4EC0;&#x4E48;&#x662F;if&#x8BED;&#x53E5;&#xFF0C;while&#x5FAA;&#x73AF;&#xFF1F;</h4>
+<p>if &#x8BED;&#x53E5;&#x5141;&#x8BB8;&#x4F60;&#x68C0;&#x67E5;&#x7A0B;&#x5E8F;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x5E76;&#x9002;&#x5F53;&#x5730;&#x54CD;&#x5E94;&#x8BE5;&#x72B6;&#x6001;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5199;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684; if &#x8BED;&#x53E5;&#x6765;&#x68C0;&#x67E5;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#xFF0C;&#x6216;&#x8005;&#x4F60;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x7CFB;&#x5217;&#x590D;&#x6742;&#x7684; if &#x8BED;&#x53E5;&#x6765;&#x786E;&#x5B9A;&#x4F60;&#x6B63;&#x5728;&#x5BFB;&#x627E;&#x7684;&#x6761;&#x4EF6;&#x3002;</p>
+<p>&#x53EA;&#x8981;&#x67D0;&#x4E9B;&#x6761;&#x4EF6;&#x4FDD;&#x6301;&#x6B63;&#x786E;&#xFF0C;&#x5FAA;&#x73AF;&#x5C31;&#x4F1A;&#x8FD0;&#x884C;&#x3002;&#x82E5;&#x7528;&#x6237;&#x9700;&#x8981;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; while &#x5FAA;&#x73AF;&#x8BA9;&#x7A0B;&#x5E8F;&#x4E00;&#x76F4;&#x8FD0;&#x884C;&#x3002;</p>
+<h4 id="&#x6761;&#x4EF6;&#x6D4B;&#x8BD5;">&#x6761;&#x4EF6;&#x6D4B;&#x8BD5;</h4>
+<blockquote>
+<p>&#x6761;&#x4EF6;&#x6D4B;&#x8BD5;&#x5C31;&#x662F;&#x5224;&#x65AD;&#x662F; True &#x6216; False &#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x3002; Python &#x4F7F;&#x7528;&#x503C;True &#x548C; False &#x6765;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x5E94;&#x6267;&#x884C; if &#x8BED;&#x53E5;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+</blockquote>
+<p>&#x5224;&#x65AD;&#x662F;&#x5426;&#x76F8;&#x7B49;</p>
+<p>&#x4E00;&#x4E2A;=&#x7B26;&#x53F7;&#x53EF;&#x4EE5;&#x7ED9;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#xFF0C;&#x53CC;==&#x7B26;&#x53F7;&#x5219;&#x7528;&#x6765;&#x5224;&#x8BFB;&#x4E24;&#x4E2A;&#x503C;&#x662F;&#x5426;&#x76F8;&#x7B49;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>car = <span class="hljs-string">&apos;bmw&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>car == <span class="hljs-string">&apos;bmw&apos;</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>car = <span class="hljs-string">&apos;audi&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>car == <span class="hljs-string">&apos;bmw&apos;</span>
+<span class="hljs-keyword">False</span>
+</code></pre>
+<p>&#x5728;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x65F6;&#x5FFD;&#x7565;&#x5927;&#x5C0F;&#x5199;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>car = <span class="hljs-string">&apos;Audi&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>car.lower() == <span class="hljs-string">&apos;audi&apos;</span>
+<span class="hljs-keyword">True</span>
+</code></pre>
+<p>&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E0D;&#x76F8;&#x7B49;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>topping = <span class="hljs-string">&apos;mushrooms&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>topping != <span class="hljs-string">&apos;anchovies&apos;</span>
+<span class="hljs-keyword">True</span>
+</code></pre>
+<h4 id="&#x6570;&#x503C;&#x6BD4;&#x8F83;">&#x6570;&#x503C;&#x6BD4;&#x8F83;</h4>
+<blockquote>
+<p>&#x65E2;&#x53EF;&#x6BD4;&#x8F83;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x503C;&#x662F;&#x5426;&#x76F8;&#x7B49;&#xFF0C;&#x4E5F;&#x53EF;&#x6BD4;&#x8F83;&#x6570;&#x5B57;&#x7684;&#x503C;&#x662F;&#x5426;&#x76F8;&#x7B49;&#x3002;</p>
+</blockquote>
+<p>&#x6D4B;&#x8BD5;&#x662F;&#x5426;&#x76F8;&#x7B49;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>age = <span class="hljs-number">18</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>age == <span class="hljs-number">18</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>age != <span class="hljs-number">18</span>
+<span class="hljs-keyword">False</span>
+</code></pre>
+<p>&#x5BF9;&#x6BD4;&#x7B26;&#x53F7;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>age = <span class="hljs-number">19</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>age &lt; <span class="hljs-number">21</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>age &lt;= <span class="hljs-number">21</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>age &gt; <span class="hljs-number">21</span>
+<span class="hljs-keyword">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>age &gt;= <span class="hljs-number">21</span>
+<span class="hljs-keyword">False</span>
+</code></pre>
+<h4 id="&#x540C;&#x65F6;&#x5224;&#x65AD;&#x591A;&#x4E2A;&#x6761;&#x4EF6;">&#x540C;&#x65F6;&#x5224;&#x65AD;&#x591A;&#x4E2A;&#x6761;&#x4EF6;</h4>
+<blockquote>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x5224;&#x65AD;&#x591A;&#x4E2A;&#x6761;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x5217;&#x51FA;&#x7684;&#x6240;&#x6709;&#x6761;&#x4EF6;&#x5747;&#x4E3A;&#x771F;&#xFF0C;&#x5219; and &#x8FD0;&#x7B97;&#x7B26;&#x5C06;&#x8FD4;&#x56DE; True&#x3002;&#x5982;&#x679C;&#x4EFB;&#x4F55;&#x6761;&#x4EF6;&#x4E3A;&#x771F;&#xFF0C;&#x5219; or &#x8FD0;&#x7B97;&#x7B26;&#x8FD4;&#x56DE; True&#x3002;</p>
+</blockquote>
+<p>&#x4F7F;&#x7528; and &#x5224;&#x65AD;&#x591A;&#x4E2A;&#x6761;&#x4EF6;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>age_0 = <span class="hljs-number">22</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>age_1 = <span class="hljs-number">18</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>age_0 &gt;= <span class="hljs-number">21</span> <span class="hljs-keyword">and</span> age_1 &gt;= <span class="hljs-number">21</span>
+<span class="hljs-keyword">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>age_1 = <span class="hljs-number">23</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>age_0 &gt;= <span class="hljs-number">21</span> <span class="hljs-keyword">and</span> age_1 &gt;= <span class="hljs-number">21</span>
+<span class="hljs-keyword">True</span>
+</code></pre>
+<p>&#x4F7F;&#x7528; or &#x5224;&#x65AD;&#x591A;&#x4E2A;&#x6761;&#x4EF6;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>age_0 = <span class="hljs-number">22</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>age_1 = <span class="hljs-number">18</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>age_0 &gt;= <span class="hljs-number">21</span> <span class="hljs-keyword">or</span> age_1 &gt;= <span class="hljs-number">21</span>
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>age_0 = <span class="hljs-number">18</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>age_0 &gt;= <span class="hljs-number">21</span> <span class="hljs-keyword">or</span> age_1 &gt;= <span class="hljs-number">21</span>
+<span class="hljs-keyword">False</span>
+</code></pre>
+<h4 id="&#x5E03;&#x5C14;&#x503C;">&#x5E03;&#x5C14;&#x503C;</h4>
+<blockquote>
+<p>&#x5E03;&#x5C14;&#x503C;&#x53EA;&#x6709;&#x4E24;&#x79CD;&#xFF1A; True &#x548C; False&#xFF0C;&#x5E26;&#x5E03;&#x5C14;&#x503C;&#x7684;&#x53D8;&#x91CF;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x8DDF;&#x8E2A;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x67D0;&#x4E9B;&#x6761;&#x4EF6;&#x3002;</p>
+</blockquote>
+<p>&#x7B80;&#x5355;&#x7684;&#x5E03;&#x5C14;&#x503C;</p>
+<pre><code class="lang-python">game_active = <span class="hljs-keyword">True</span>
+can_edit = <span class="hljs-keyword">False</span>
+</code></pre>
+<h4 id="if&#x8BED;&#x53E5;">If&#x8BED;&#x53E5;</h4>
+<blockquote>
+<p>If &#x8BED;&#x53E5;&#x6709;&#x597D;&#x51E0;&#x79CD;&#xFF0C;&#x5982;&#x4F55;&#x9009;&#x62E9;&#x5462;&#xFF1F;&#x9996;&#x5148;&#x8981;&#x770B;&#x5224;&#x65AD;&#x6761;&#x4EF6;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x6761;&#x4EF6;&#x591A;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x53EF;&#x4EE5;&#x53CD;&#x590D;&#x4F7F;&#x7528; elif &#x8BED;&#x53E5; (elif &#x662F; else if &#x7684;&#x7F29;&#x5199;)&#xFF0C;&#x6709;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B; else &#x662F;&#x4E0D;&#x9700;&#x8981;&#x7684;&#x3002;</p>
+</blockquote>
+<p>&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684; If &#x8BED;&#x53E5;</p>
+<pre><code class="lang-python">age = <span class="hljs-number">19</span>
+<span class="hljs-keyword">if</span> age &gt;= <span class="hljs-number">18</span>:
+    print(<span class="hljs-string">&quot;You&apos;re old enough to vote!&quot;</span>)
+</code></pre>
+<p>if-else &#x8BED;&#x53E5;</p>
+<pre><code class="lang-python">age = <span class="hljs-number">17</span>
+<span class="hljs-keyword">if</span> age &gt;= <span class="hljs-number">18</span>:
+    print(<span class="hljs-string">&quot;You&apos;re old enough to vote!&quot;</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">&quot;You can&apos;t vote yet.&quot;</span>)
+</code></pre>
+<p>if-elif-else &#x8BED;&#x53E5;&#x94FE;</p>
+<pre><code class="lang-python">age = <span class="hljs-number">12</span>
+
+<span class="hljs-keyword">if</span> age &lt; <span class="hljs-number">4</span>:
+    price = <span class="hljs-number">0</span>
+<span class="hljs-keyword">elif</span> age &lt; <span class="hljs-number">18</span>:
+    price = <span class="hljs-number">5</span>
+<span class="hljs-keyword">else</span>:
+    price = <span class="hljs-number">10</span>
+print(<span class="hljs-string">&quot;Your cost is $&quot;</span> + str(price) + <span class="hljs-string">&quot;.&quot;</span>)
+</code></pre>
+<h4 id="&#x5217;&#x8868;&#x7684;&#x6761;&#x4EF6;&#x6D4B;&#x8BD5;">&#x5217;&#x8868;&#x7684;&#x6761;&#x4EF6;&#x6D4B;&#x8BD5;</h4>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x6D4B;&#x8BD5;&#x5217;&#x8868;&#x4E2D;&#x662F;&#x5426;&#x542B;&#x6709;&#x67D0;&#x4E2A;&#x503C;&#xFF0C;&#x5728;&#x904D;&#x5386;&#x5217;&#x8868;&#x524D;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6D4B;&#x8BD5;&#x5217;&#x8868;&#x662F;&#x5426;&#x662F;&#x7A7A;&#x7684;&#x3002;</p>
+</blockquote>
+<p>&#x6D4B;&#x8BD5;&#x67D0;&#x4E2A;&#x503C;&#x662F;&#x5426;&#x5728;&#x5217;&#x8868;&#x4E2D;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>players = [<span class="hljs-string">&apos;al&apos;</span>, <span class="hljs-string">&apos;bea&apos;</span>, <span class="hljs-string">&apos;cyn&apos;</span>, <span class="hljs-string">&apos;dale&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&apos;al&apos;</span> <span class="hljs-keyword">in</span> players
+<span class="hljs-keyword">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&apos;eric&apos;</span> <span class="hljs-keyword">in</span> players
+<span class="hljs-keyword">False</span>
+</code></pre>
+<p>&#x6D4B;&#x8BD5;&#x67D0;&#x4E2A;&#x503C;&#x662F;&#x5426;&#x5728;&#x5217;&#x8868;&#x4E2D;</p>
+<pre><code class="lang-python">banned_users = [<span class="hljs-string">&apos;ann&apos;</span>, <span class="hljs-string">&apos;chad&apos;</span>, <span class="hljs-string">&apos;dee&apos;</span>]
+user = <span class="hljs-string">&apos;erin&apos;</span>
+<span class="hljs-keyword">if</span> user <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> banned_users:
+    print(<span class="hljs-string">&quot;You can play!&quot;</span>)
+</code></pre>
+<p>&#x5224;&#x65AD;&#x5217;&#x8868;&#x662F;&#x5426;&#x4E3A;&#x7A7A;</p>
+<pre><code class="lang-python">players = []
+<span class="hljs-keyword">if</span> players:
+    <span class="hljs-keyword">for</span> player <span class="hljs-keyword">in</span> players:
+        print(<span class="hljs-string">&quot;Player: &quot;</span> + player.title())
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">&quot;We have no players yet!&quot;</span>)
+</code></pre>
+<h4 id="&#x63A5;&#x6536;&#x8F93;&#x5165;">&#x63A5;&#x6536;&#x8F93;&#x5165;</h4>
+<blockquote>
+<p>&#x5728; python3 &#x4E2D;&#xFF0C; input()&#x51FD;&#x6570;&#x5C06;&#x6240;&#x6709;&#x7684;&#x8F93;&#x5165;&#x6309;&#x7167;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+</blockquote>
+<p>&#x7B80;&#x5355;&#x7684;&#x8F93;&#x5165;</p>
+<pre><code class="lang-python">name = input(<span class="hljs-string">&quot;What&apos;s your name? &quot;</span>)
+print(<span class="hljs-string">&quot;Hello, &quot;</span> + name + <span class="hljs-string">&quot;.&quot;</span>)
+</code></pre>
+<p>&#x63A5;&#x53D7;&#x6570;&#x5B57;&#x8F93;&#x5165;</p>
+<pre><code class="lang-python">age = input(<span class="hljs-string">&quot;How old are you? &quot;</span>)
+age = int(age)
+<span class="hljs-keyword">if</span> age &gt;= <span class="hljs-number">18</span>:
+    print(<span class="hljs-string">&quot;\nYou can vote!&quot;</span>)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">&quot;\nYou can&apos;t vote yet.&quot;</span>)
+</code></pre>
+<p>&#x63A5;&#x53D7;&#x8F93;&#x5165;&#xFF08; python2.7&#xFF09;</p>
+<p>Python2.7 &#x4E2D;&#xFF0C;&#x4F7F;&#x7528; raw_input()&#x51FD;&#x6570;&#xFF0C;&#x540C; python3 &#x4E2D;&#x7684; input() &#x51FD;&#x6570;</p>
+<pre><code class="lang-python">name = raw_input(<span class="hljs-string">&quot;What&apos;s your name? &quot;</span>)
+print(<span class="hljs-string">&quot;Hello, &quot;</span> + name + <span class="hljs-string">&quot;.&quot;</span>)
+</code></pre>
+<h4 id="while&#x5FAA;&#x73AF;">While&#x5FAA;&#x73AF;</h4>
+<blockquote>
+<p>&#x53EA;&#x8981;&#x6761;&#x4EF6;&#x4E3A; True&#xFF0C; while &#x5FAA;&#x73AF;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x4F1A;&#x53CD;&#x590D;&#x6267;&#x884C;&#x3002;</p>
+</blockquote>
+<p>&#x4ECE; 1 &#x7B97;&#x5230; 5</p>
+<pre><code class="lang-python">current_number = <span class="hljs-number">1</span>
+<span class="hljs-keyword">while</span> current_number &lt;= <span class="hljs-number">5</span>:
+    print(current_number)
+    current_number += <span class="hljs-number">1</span>
+</code></pre>
+<p>&#x7528;&#x6237;&#x51B3;&#x5B9A;&#x4F55;&#x65F6;&#x9000;&#x51FA;</p>
+<pre><code class="lang-python">prompt = <span class="hljs-string">&quot;\nTell me something, and I&apos;ll &quot;</span>
+prompt += <span class="hljs-string">&quot;repeat it back to you.&quot;</span>
+prompt += <span class="hljs-string">&quot;\nEnter &apos;quit&apos; to end the program. &quot;</span>
+
+message = <span class="hljs-string">&quot;&quot;</span>
+<span class="hljs-keyword">while</span> message != <span class="hljs-string">&apos;quit&apos;</span>:
+    message = input(prompt)
+
+    <span class="hljs-keyword">if</span> message != <span class="hljs-string">&apos;quit&apos;</span>:
+        print(message)
+</code></pre>
+<p>&#x4F7F;&#x7528; flag</p>
+<pre><code class="lang-python">prompt = <span class="hljs-string">&quot;\nTell me something, and I&apos;ll &quot;</span>
+prompt += <span class="hljs-string">&quot;repeat it back to you.&quot;</span>
+prompt += <span class="hljs-string">&quot;\nEnter &apos;quit&apos; to end the program. &quot;</span>
+
+active = <span class="hljs-keyword">True</span>
+<span class="hljs-keyword">while</span> active:
+    message = input(prompt)
+    <span class="hljs-keyword">if</span> message == <span class="hljs-string">&apos;quit&apos;</span>:
+        active = <span class="hljs-keyword">False</span>
+    <span class="hljs-keyword">else</span>:
+        print(message)
+</code></pre>
+<p>&#x4F7F;&#x7528; break &#x9000;&#x51FA;&#x5F53;&#x524D;&#x5FAA;&#x73AF;</p>
+<pre><code class="lang-python">prompt = <span class="hljs-string">&quot;\nWhat cities have you visited?&quot;</span>
+prompt += <span class="hljs-string">&quot;\nEnter &apos;quit&apos; when you&apos;re done. &quot;</span>
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    city = input(prompt)
+
+    <span class="hljs-keyword">if</span> city == <span class="hljs-string">&apos;quit&apos;</span>:
+        <span class="hljs-keyword">break</span>
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">&quot;I&apos;ve been to &quot;</span> + city + <span class="hljs-string">&quot;!&quot;</span>)
+</code></pre>
+<h4 id="&#x9000;&#x51FA;&#x5FAA;&#x73AF;">&#x9000;&#x51FA;&#x5FAA;&#x73AF;</h4>
+<p>&#x5728;&#x4EFB;&#x4F55; python &#x5FAA;&#x73AF;&#x4E2D;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; break &#x8BED;&#x53E5;&#x548C; continue &#x8BED;&#x53E5;&#xFF0C;&#x4F7F;&#x7528; continue &#x8DF3;&#x51FA;&#x672C;&#x6B21;&#x5FAA;&#x73AF;,&#x4F7F;&#x7528; break &#x8DF3;&#x51FA;&#x6574;&#x4E2A;&#x5FAA;&#x73AF;&#x3002;continue &#x8BED;&#x53E5;&#x7528;&#x6765;&#x544A;&#x8BC9; Python &#x8DF3;&#x8FC7;&#x5F53;&#x524D;&#x5FAA;&#x73AF;&#x7684;&#x5269;&#x4F59;&#x8BED;&#x53E5;&#xFF0C;&#x7136;&#x540E;&#x7EE7;&#x7EED;&#x8FDB;&#x884C;&#x4E0B;&#x4E00;&#x8F6E;&#x5FAA;&#x73AF;&#x3002;</p>
+<h4 id="continue">Continue</h4>
+<p>continue &#x7528;&#x5728;&#x5FAA;&#x73AF;&#x4E2D;</p>
+<pre><code class="lang-python">banned_users = [<span class="hljs-string">&apos;eve&apos;</span>, <span class="hljs-string">&apos;fred&apos;</span>, <span class="hljs-string">&apos;gary&apos;</span>, <span class="hljs-string">&apos;helen&apos;</span>]
+
+prompt = <span class="hljs-string">&quot;\nAdd a player to your team.&quot;</span>
+prompt += <span class="hljs-string">&quot;\nEnter &apos;quit&apos; when you&apos;re done. &quot;</span>
+
+players = []
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    player = input(prompt)
+    <span class="hljs-keyword">if</span> player == <span class="hljs-string">&apos;quit&apos;</span>:
+        <span class="hljs-keyword">break</span>
+    <span class="hljs-keyword">elif</span> player <span class="hljs-keyword">in</span> banned_users:
+        print(player + <span class="hljs-string">&quot; is banned!&quot;</span>)
+        <span class="hljs-keyword">continue</span>
+    <span class="hljs-keyword">else</span>:
+        players.append(player)
+
+print(<span class="hljs-string">&quot;\nYour team:&quot;</span>)
+<span class="hljs-keyword">for</span> player <span class="hljs-keyword">in</span> players:
+    print(player)
+</code></pre>
+<h4 id="&#x907F;&#x514D;&#x65E0;&#x9650;&#x5FAA;&#x73AF;">&#x907F;&#x514D;&#x65E0;&#x9650;&#x5FAA;&#x73AF;</h4>
+<blockquote>
+<p>while &#x5FAA;&#x73AF;&#x540E;&#x7684;&#x6761;&#x4EF6;&#x82E5;&#x4E3A; Ture&#xFF0C;&#x7A0B;&#x5E8F;&#x4F1A;&#x4E00;&#x76F4;&#x5FAA;&#x73AF;&#x6267;&#x884C;&#x4E0D;&#x4F1A;&#x505C;&#x6B62;&#xFF0C;&#x76F4;&#x5230;&#x6761;&#x4EF6;&#x4E3A; False&#xFF0C;&#x5FAA;&#x73AF;&#x624D;&#x4F1A;&#x505C;&#x6B62;&#x8FD0;&#x884C;&#x3002;</p>
+</blockquote>
+<p>&#x4E00;&#x4E2A;&#x65E0;&#x9650;&#x7684;&#x5FAA;&#x73AF;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    name = input(<span class="hljs-string">&quot;\nWho are you? &quot;</span>)
+    print(<span class="hljs-string">&quot;Nice to meet you, &quot;</span> + name + <span class="hljs-string">&quot;!&quot;</span>)
+</code></pre>
+<h4 id="&#x5220;&#x9664;&#x5217;&#x8868;&#x4E2D;&#x67D0;&#x4E2A;&#x503C;&#x7684;&#x6240;&#x6709;&#x5B9E;&#x4F8B;">&#x5220;&#x9664;&#x5217;&#x8868;&#x4E2D;&#x67D0;&#x4E2A;&#x503C;&#x7684;&#x6240;&#x6709;&#x5B9E;&#x4F8B;</h4>
+<blockquote>
+<p>remove()&#x65B9;&#x6CD5;&#x4ECE;&#x5217;&#x8868;&#x4E2D;&#x5220;&#x9664;&#x7279;&#x5B9A;&#x503C;&#xFF0C;&#x4F46;&#x5B83;&#x53EA;&#x4F1A;&#x5220;&#x9664;&#x8FD9;&#x4E2A;&#x503C;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x7528; while &#x5FAA;&#x73AF;&#x6765;&#x5220;&#x9664;&#x8BE5;&#x503C;&#x7684;&#x6240;&#x6709;&#x5B9E;&#x4F8B;&#x3002;</p>
+</blockquote>
+<p>&#x5220;&#x9664; pets &#x5217;&#x8868;&#x4E2D;&#x7684;&#x6240;&#x6709; cat</p>
+<pre><code class="lang-python">pets = [<span class="hljs-string">&apos;dog&apos;</span>, <span class="hljs-string">&apos;cat&apos;</span>, <span class="hljs-string">&apos;dog&apos;</span>, <span class="hljs-string">&apos;fish&apos;</span>, <span class="hljs-string">&apos;cat&apos;</span>,
+<span class="hljs-string">&apos;rabbit&apos;</span>, <span class="hljs-string">&apos;cat&apos;</span>]
+print(pets)
+
+<span class="hljs-keyword">while</span> <span class="hljs-string">&apos;cat&apos;</span> <span class="hljs-keyword">in</span> pets:
+    pets.remove(<span class="hljs-string">&apos;cat&apos;</span>)
+
+print(pets)
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter_002.html" class="navigation navigation-prev " aria-label="Previous page: 字典Dictionaries">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter_004.html" class="navigation navigation-next " aria-label="Next page: 函数Functions">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"if语句和while循环","level":"1.6","depth":1,"next":{"title":"函数Functions","level":"1.7","depth":1,"path":"chapter_004.md","ref":"chapter_004.md","articles":[]},"previous":{"title":"字典Dictionaries","level":"1.5","depth":1,"path":"chapter_002.md","ref":"chapter_002.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter_003.md","mtime":"2019-12-08T11:21:25.804Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-08T12:33:52.039Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

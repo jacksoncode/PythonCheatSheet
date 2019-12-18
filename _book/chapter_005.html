@@ -1,0 +1,588 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>类Class · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter_006.html" />
+    
+    
+    <link rel="prev" href="chapter_004.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter_000.html">
+            
+                <a href="chapter_000.html">
+            
+                    
+                    综述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter_001.html">
+            
+                <a href="chapter_001.html">
+            
+                    
+                    列表List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter_002.html">
+            
+                <a href="chapter_002.html">
+            
+                    
+                    字典Dictionaries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter_003.html">
+            
+                <a href="chapter_003.html">
+            
+                    
+                    if语句和while循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="chapter_004.html">
+            
+                <a href="chapter_004.html">
+            
+                    
+                    函数Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="chapter_005.html">
+            
+                <a href="chapter_005.html">
+            
+                    
+                    类Class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="chapter_006.html">
+            
+                <a href="chapter_006.html">
+            
+                    
+                    文件和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >类Class</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7C7B;class">&#x7C7B;Class</h1>
+<h4 id="&#x4EC0;&#x4E48;&#x662F;&#x7C7B;&#xFF1F;">&#x4EC0;&#x4E48;&#x662F;&#x7C7B;&#xFF1F;</h4>
+<blockquote>
+<p>&#x7C7B;&#x662F;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x7684;&#x57FA;&#x7840;&#x3002;&#x7C7B;&#x4EE3;&#x8868;&#x4F60;&#x60F3;&#x8981;&#x5728;&#x7A0B;&#x5E8F;&#x4E2D;&#x5EFA;&#x6A21;&#x7684;&#x771F;&#x5B9E;&#x4E16;&#x754C;&#x7684;&#x4E1C;&#x897F;&#xFF1A;&#x4F8B;&#x5982;&#x72D7;&#xFF0C;&#x6C7D;&#x8F66;&#x548C;&#x673A;&#x5668;&#x4EBA;&#x3002;&#x4F60;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x7C7B;&#x6765;&#x5236;&#x4F5C;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x4E9B;&#x5BF9;&#x8C61;&#x662F;&#x72D7;&#xFF0C;&#x6C7D;&#x8F66;&#x548C;&#x673A;&#x5668;&#x4EBA;&#x7684;&#x7279;&#x5B9A;&#x5B9E;&#x4F8B;&#xFF08;&#x6BD4;&#x5982;&#x7267;&#x7F8A;&#x72AC;&#xFF0C;&#x5927;&#x4F17; polo&#xFF0C;&#x548C;&#x53D8;&#x5F62;&#x91D1;&#x521A;&#xFF09;&#x3002; &#x7C7B;&#x5B9A;&#x4E49;&#x4E86;&#x6574;&#x4E2A;&#x7C7B;&#x522B;&#x7684;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x62E5;&#x6709;&#x7684;&#x5171;&#x540C;&#x884C;&#x4E3A;&#x4EE5;&#x53CA;&#x53EF;&#x4EE5;&#x4E0E;&#x8FD9;&#x4E9B;&#x5BF9;&#x8C61;&#x76F8;&#x5173;&#x8054;&#x7684;&#x4FE1;&#x606F;&#x3002;
+&#x7C7B;&#x53EF;&#x4EE5;&#x76F8;&#x4E92;&#x7EE7;&#x627F;&#xFF1A;&#x4F60;&#x53EF;&#x4EE5;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x6269;&#x5C55;&#x73B0;&#x6709;&#x7C7B;&#x529F;&#x80FD;&#x7684;&#x7C7B;&#x3002;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x9488;&#x5BF9;&#x591A;&#x79CD;&#x60C5;&#x51B5;&#x8FDB;&#x884C;&#x9AD8;&#x6548;&#x7684;&#x7F16;&#x7A0B;&#x3002;</p>
+</blockquote>
+<h4 id="&#x521B;&#x5EFA;&#x5E76;&#x4F7F;&#x7528;&#x7C7B;">&#x521B;&#x5EFA;&#x5E76;&#x4F7F;&#x7528;&#x7C7B;</h4>
+<p>Car &#x7C7B;</p>
+<pre><code class="lang-py"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;A simple attempt to model a car.&quot;&quot;&quot;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, make, model, year)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;Initialize car attributes.&quot;&quot;&quot;</span>
+        self.make = make
+        self.model = model
+        self.year = year
+
+        <span class="hljs-comment"># Fuel capacity and level in gallons.</span>
+        self.fuel_capacity = <span class="hljs-number">15</span>
+        self.fuel_level = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fill_tank</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;Fill gas tank to capacity.&quot;&quot;&quot;</span>
+        self.fuel_level = self.fuel_capacity
+        print(<span class="hljs-string">&quot;Fuel tank is full.&quot;</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">drive</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;Simulate driving.&quot;&quot;&quot;</span>
+        print(<span class="hljs-string">&quot;The car is moving.&quot;</span>)
+</code></pre>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-py">my_car = Car(<span class="hljs-string">&apos;audi&apos;</span>, <span class="hljs-string">&apos;a4&apos;</span>, <span class="hljs-number">2016</span>)
+</code></pre>
+<p>&#x8BBF;&#x95EE;&#x5C5E;&#x6027;&#x503C;</p>
+<pre><code class="lang-py">print(my_car.make)
+print(my_car.model)
+print(my_car.year)
+</code></pre>
+<p>&#x8C03;&#x7528;&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-py">my_car.fill_tank()
+my_car.drive()
+</code></pre>
+<p>&#x521B;&#x5EFA;&#x591A;&#x4E2A;&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-py">my_car = Car(<span class="hljs-string">&apos;audi&apos;</span>, <span class="hljs-string">&apos;a4&apos;</span>, <span class="hljs-number">2016</span>)
+my_old_car = Car(<span class="hljs-string">&apos;subaru&apos;</span>, <span class="hljs-string">&apos;outback&apos;</span>, <span class="hljs-number">2013</span>)
+my_truck = Car(<span class="hljs-string">&apos;toyota&apos;</span>, <span class="hljs-string">&apos;tacoma&apos;</span>, <span class="hljs-number">2010</span>)
+</code></pre>
+<h4 id="&#x4FEE;&#x6539;&#x5C5E;&#x6027;">&#x4FEE;&#x6539;&#x5C5E;&#x6027;</h4>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4FEE;&#x6539;&#x5C5E;&#x6027;&#x7684;&#x503C;&#xFF0C;&#x6216;&#x8005;&#x7F16;&#x5199;&#x65B9;&#x6CD5;&#x66F4;&#x597D;&#x7684;&#x7BA1;&#x7406;&#x5C5E;&#x6027;&#x7684;&#x503C;&#x3002;</p>
+</blockquote>
+<p>&#x76F4;&#x63A5;&#x4FEE;&#x6539;&#x5C5E;&#x6027;&#x7684;&#x503C;</p>
+<pre><code class="lang-py">my_new_car = Car(<span class="hljs-string">&apos;audi&apos;</span>, <span class="hljs-string">&apos;a4&apos;</span>, <span class="hljs-number">2016</span>)
+my_new_car.fuel_level = <span class="hljs-number">5</span>
+</code></pre>
+<p>&#x5199;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x66F4;&#x65B0;&#x5C5E;&#x6027;&#x503C;</p>
+<pre><code class="lang-py"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">update_fuel_level</span><span class="hljs-params">(self, new_level)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;Update the fuel level.&quot;&quot;&quot;</span>
+    <span class="hljs-keyword">if</span> new_level &lt;= self.fuel_capacity:
+        self.fuel_level = new_level
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">&quot;The tank can&apos;t hold that much!&quot;</span>)
+</code></pre>
+<p>&#x5199;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x589E;&#x52A0;&#x5C5E;&#x6027;&#x503C;</p>
+<pre><code class="lang-py"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_fuel</span><span class="hljs-params">(self, amount)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;Add fuel to the tank.&quot;&quot;&quot;</span>
+    <span class="hljs-keyword">if</span> (self.fuel_level + amount
+        &lt;= self.fuel_capacity):
+        self.fuel_level += amount
+        print(<span class="hljs-string">&quot;Added fuel.&quot;</span>)
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">&quot;The tank won&apos;t hold that much.&quot;</span>)
+</code></pre>
+<h4 id="&#x547D;&#x540D;&#x89C4;&#x5219;">&#x547D;&#x540D;&#x89C4;&#x5219;</h4>
+<blockquote>
+<p>&#x5728; Python &#x4E2D;&#xFF0C;&#x7C7B;&#x540D;&#x79F0;&#x662F;&#x7528; CamelCase &#x5199;&#x7684;&#xFF0C;&#x800C;&#x5BF9;&#x8C61;&#x540D;&#x79F0;&#x7528;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x548C;&#x4E0B;&#x5212;&#x7EBF;&#x5199;&#x7684;&#x3002;&#x5305;&#x542B;&#x7C7B;&#x7684;&#x6A21;&#x5757;&#x4ECD;&#x5E94;&#x4EE5;&#x5C0F;&#x5199;&#x5B57;&#x548C;&#x4E0B;&#x5212;&#x7EBF;&#x547D;&#x540D;&#x3002;</p>
+</blockquote>
+<h4 id="&#x7C7B;&#x7684;&#x7EE7;&#x627F;">&#x7C7B;&#x7684;&#x7EE7;&#x627F;</h4>
+<blockquote>
+<p>&#x5982;&#x679C;&#x4F60;&#x8981;&#x5199;&#x7684;&#x7C7B;&#x662F;&#x53E6;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x5236;&#x5B9A;&#x7248;&#x672C;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7EE7;&#x627F;&#x3002;&#x5F53;&#x4E00;&#x4E2A;&#x7C7B;&#x4ECE;&#x53E6;&#x4E00;&#x4E2A;&#x7C7B;&#x7EE7;&#x627F;&#x65F6;&#xFF0C;&#x5B83;&#x4F1A;&#x81EA;&#x52A8;&#x63A5;&#x53D7;&#x7236;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x3002;&#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x81EA;&#x7531;&#x5F15;&#x5165;&#x65B0;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x8986;&#x76D6;&#x7236;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x3002;&#x5B9A;&#x4E49;&#x65B0;&#x7C7B;&#x65F6;&#xFF0C;&#x8981;&#x4ECE;&#x53E6;&#x4E00;&#x4E2A;&#x7C7B;&#x7EE7;&#x627F;&#xFF0C;&#x8BF7;&#x5728;&#x62EC;&#x53F7;&#x4E2D;&#x5199;&#x4E0A;&#x7236;&#x7C7B;&#x7684;&#x540D;&#x79F0;&#x3002;</p>
+</blockquote>
+<p>&#x5B50;&#x7C7B;&#x7684;<em>init </em>()&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-py"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ElectricCar</span><span class="hljs-params">(Car)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;A simple model of an electric car.&quot;&quot;&quot;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, make, model, year)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;Initialize an electric car.&quot;&quot;&quot;</span>
+        super().__init__(make, model, year)
+
+        <span class="hljs-comment"># Attributes specific to electric cars.</span>
+        <span class="hljs-comment"># Battery capacity in kWh.</span>
+        self.battery_size = <span class="hljs-number">70</span>
+        <span class="hljs-comment"># Charge level in %.</span>
+        self.charge_level = <span class="hljs-number">0</span>
+</code></pre>
+<p>&#x5411;&#x5B50;&#x7C7B;&#x4E2D;&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-py"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ElectricCar</span><span class="hljs-params">(Car)</span>:</span>
+    --snip--
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">charge</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;Fully charge the vehicle.&quot;&quot;&quot;</span>
+        self.charge_level = <span class="hljs-number">100</span>
+        print(<span class="hljs-string">&quot;The vehicle is fully charged.&quot;</span>)
+</code></pre>
+<p>&#x4F7F;&#x7528;&#x5B50;&#x7C7B;&#x548C;&#x7236;&#x7C7B;&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-py">my_ecar = ElectricCar(<span class="hljs-string">&apos;tesla&apos;</span>, <span class="hljs-string">&apos;model s&apos;</span>, <span class="hljs-number">2016</span>)
+my_ecar.charge()
+my_ecar.drive()
+</code></pre>
+<h4 id="&#x627E;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x65B9;&#x6CD5;">&#x627E;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x65B9;&#x6CD5;</h4>
+<blockquote>
+<p>&#x6709;&#x8BB8;&#x591A;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7528;&#x4EE3;&#x7801;&#x6A21;&#x62DF;&#x771F;&#x5B9E;&#x4E16;&#x754C;&#x7684;&#x5BF9;&#x8C61;&#x548C;&#x60C5;&#x51B5;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x65B9;&#x6CD5;&#x592A;&#x591A;&#x4E5F;&#x4F1A;&#x8BA9;&#x4EBA;&#x611F;&#x5230;&#x538B;&#x529B;&#x3002; &#x90A3;&#x5C31;&#x9009;&#x62E9;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x5E76;&#x5C1D;&#x8BD5; - &#x5982;&#x679C;&#x4F60;&#x7684;&#x7B2C;&#x4E00;&#x6B21;&#x5C1D;&#x8BD5;&#x4E0D;&#x8D77;&#x4F5C;&#x7528;&#xFF0C;&#x8BF7;&#x5C1D;&#x8BD5;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+</blockquote>
+<h4 id="&#x7C7B;&#x7684;&#x7EE7;&#x627F;">&#x7C7B;&#x7684;&#x7EE7;&#x627F;</h4>
+<p>&#x8986;&#x76D6;&#x7236;&#x7C7B;</p>
+<pre><code class="lang-py"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ElectricCar</span><span class="hljs-params">(Car)</span>:</span>
+    --snip--
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fill_tank</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;Display an error message.&quot;&quot;&quot;</span>
+        print(<span class="hljs-string">&quot;This car has no fuel tank!&quot;</span>)
+</code></pre>
+<h4 id="&#x5B9E;&#x4F8B;&#x4E3A;&#x5C5E;&#x6027;">&#x5B9E;&#x4F8B;&#x4E3A;&#x5C5E;&#x6027;</h4>
+<p>Battery &#x7C7B;</p>
+<pre><code class="lang-py"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Battery</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;A battery for an electric car.&quot;&quot;&quot;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, size=<span class="hljs-number">70</span>)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;Initialize battery attributes.&quot;&quot;&quot;</span>
+        <span class="hljs-comment"># Capacity in kWh, charge level in %.</span>
+        self.size = size
+        self.charge_level = <span class="hljs-number">0</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_range</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;Return the battery&apos;s range.&quot;&quot;&quot;</span>
+        <span class="hljs-keyword">if</span> self.size == <span class="hljs-number">70</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-number">240</span>
+        <span class="hljs-keyword">elif</span> self.size == <span class="hljs-number">85</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-number">270</span>
+</code></pre>
+<p>&#x4F7F;&#x7528;&#x5B9E;&#x4F8B;&#x4F5C;&#x4E3A;&#x5C5E;&#x6027;</p>
+<pre><code class="lang-py"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ElectricCar</span><span class="hljs-params">(Car)</span>:</span>
+    --snip--
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, make, model, year)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;Initialize an electric car.&quot;&quot;&quot;</span>
+        super().__init__(make, model, year)
+
+        <span class="hljs-comment"># Attribute specific to electric cars.</span>
+        self.battery = Battery()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">charge</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;Fully charge the vehicle.&quot;&quot;&quot;</span>
+        self.battery.charge_level = <span class="hljs-number">100</span>
+        print(<span class="hljs-string">&quot;The vehicle is fully charged.&quot;</span>)
+</code></pre>
+<p>&#x4F7F;&#x7528;&#x5B9E;&#x4F8B;</p>
+<pre><code class="lang-py">my_ecar = ElectricCar(<span class="hljs-string">&apos;tesla&apos;</span>, <span class="hljs-string">&apos;model x&apos;</span>, <span class="hljs-number">2016</span>)
+
+my_ecar.charge()
+print(my_ecar.battery.get_range())
+my_ecar.drive()
+</code></pre>
+<h4 id="&#x5BFC;&#x5165;&#x7C7B;">&#x5BFC;&#x5165;&#x7C7B;</h4>
+<blockquote>
+<p>&#x5728;&#x6DFB;&#x52A0;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x548C;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x7C7B;&#x6587;&#x4EF6;&#x53EF;&#x80FD;&#x4F1A;&#x53D8;&#x5F97;&#x5F88;&#x957F;&#x3002; &#x4E3A;&#x4E86;&#x4FDD;&#x6301;&#x7A0B;&#x5E8F;&#x6587;&#x4EF6;&#x7684;&#x6574;&#x6D01;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x7C7B;&#x5148;&#x5B58;&#x50A8;&#x5728;&#x6A21;&#x5757;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x6A21;&#x5757;&#x5BFC;&#x5165;&#x5230;&#x4E3B;&#x7A0B;&#x5E8F;&#x4E2D;&#x3002;</p>
+</blockquote>
+<p>&#x5728;&#x6587;&#x4EF6; car.py &#x4E2D;&#x5B58;&#x50A8;&#x7C7B;</p>
+<pre><code class="lang-py"><span class="hljs-string">&quot;&quot;&quot;Represent gas and electric cars.&quot;&quot;&quot;</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;A simple attempt to model a car.&quot;&quot;&quot;</span>
+    --snip--
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Battery</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;A battery for an electric car.&quot;&quot;&quot;</span>
+    --snip&#x2014;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ElectricCar</span><span class="hljs-params">(Car)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;A simple model of an electric car.&quot;&quot;&quot;</span>
+    --snip--
+</code></pre>
+<p>&#x4ECE;&#x6A21;&#x5757; car.py &#x4E2D;&#x5BFC;&#x5165;&#x5404;&#x4E2A;&#x7C7B;</p>
+<pre><code class="lang-py"><span class="hljs-keyword">from</span> car <span class="hljs-keyword">import</span> Car, ElectricCar
+
+my_beetle = Car(<span class="hljs-string">&apos;volkswagen&apos;</span>, <span class="hljs-string">&apos;beetle&apos;</span>, <span class="hljs-number">2016</span>)
+my_beetle.fill_tank()
+my_beetle.drive()
+
+my_tesla = ElectricCar(<span class="hljs-string">&apos;tesla&apos;</span>, <span class="hljs-string">&apos;model s&apos;</span>, <span class="hljs-number">2016</span>)
+my_tesla.charge()
+my_tesla.drive()
+</code></pre>
+<p>&#x5BFC;&#x5165;&#x6574;&#x4E2A;&#x6A21;&#x5757;</p>
+<pre><code class="lang-py"><span class="hljs-keyword">import</span> car
+
+my_beetle = car.Car(<span class="hljs-string">&apos;volkswagen&apos;</span>, <span class="hljs-string">&apos;beetle&apos;</span>, <span class="hljs-number">2016</span>)
+my_beetle.fill_tank()
+my_beetle.drive()
+
+my_tesla = car.ElectricCar(<span class="hljs-string">&apos;tesla&apos;</span>, <span class="hljs-string">&apos;model s&apos;</span>, <span class="hljs-number">2016</span>)
+my_tesla.charge()
+my_tesla.drive()
+</code></pre>
+<p>&#x5BFC;&#x5165;&#x6A21;&#x5757;&#x7684;&#x6240;&#x6709;&#x7C7B;
+&#xFF08; &#x4E0D;&#x8981;&#x8FD9;&#x6837;&#x505A;&#xFF0C;&#x770B;&#x5230;&#x7684;&#x65F6;&#x5019;&#x77E5;&#x9053;&#x662F;&#x4EC0;&#x4E48;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF09;</p>
+<pre><code class="lang-py"><span class="hljs-keyword">from</span> car <span class="hljs-keyword">import</span> *
+
+my_beetle = Car(<span class="hljs-string">&apos;volkswagen&apos;</span>, <span class="hljs-string">&apos;beetle&apos;</span>, <span class="hljs-number">2016</span>)
+</code></pre>
+<h4 id="python27&#x7C7B;">Python2.7&#x7C7B;</h4>
+<p>&#x7C7B;&#x662F;&#x4ECE;&#x5BF9;&#x8C61;&#x7EE7;&#x627F;&#x6765;&#x7684;</p>
+<pre><code class="lang-py"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassName</span><span class="hljs-params">(object)</span>:</span>
+</code></pre>
+<p>Car class</p>
+<pre><code class="lang-py"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span><span class="hljs-params">(object)</span>:</span>
+</code></pre>
+<p>&#x5B50;&#x7C7B;&#x7684;<em>init</em>()&#x65B9;&#x6CD5;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;</p>
+<pre><code class="lang-py"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ChildClassName</span><span class="hljs-params">(ParentClass)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+        super(ClassName, self).__init__()
+</code></pre>
+<p>ElectricCar class</p>
+<pre><code class="lang-py"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ElectricCar</span><span class="hljs-params">(Car)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, make, model, year)</span>:</span>
+        super(ElectricCar, self).__init__(
+            make, model, year)
+</code></pre>
+<h4 id="&#x5217;&#x8868;&#x4E2D;&#x5B58;&#x50A8;&#x5BF9;&#x8C61;">&#x5217;&#x8868;&#x4E2D;&#x5B58;&#x50A8;&#x5BF9;&#x8C61;</h4>
+<blockquote>
+<p>&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x53EF;&#x4EE5;&#x5BB9;&#x7EB3;&#x4EFB;&#x610F;&#x6570;&#x91CF;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x56E0;&#x6B64;&#x4F60;&#x53EF;&#x4EE5;&#x4ECE;&#x4E00;&#x4E2A;&#x7C7B;&#x4E2D;&#x521B;&#x5EFA;&#x5927;&#x91CF;&#x5BF9;&#x8C61;&#x5E76;&#x5C06;&#x5B83;&#x4EEC;&#x5B58;&#x50A8;&#x5728;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x4E2D;&#x3002;
+&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x793A;&#x4F8B;&#xFF0C;&#x5C55;&#x793A;&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x4E00;&#x7CFB;&#x5217; rental cars&#xFF0C;&#x5E76;&#x786E;&#x4FDD;&#x6240;&#x6709;car &#x90FD;&#x5DF2;&#x51C6;&#x5907;&#x597D;&#x5F00;&#x8F66;&#x3002;</p>
+</blockquote>
+<p>&#x4E00;&#x7CFB;&#x5217; rental cars</p>
+<pre><code class="lang-py"><span class="hljs-keyword">from</span> car <span class="hljs-keyword">import</span> Car, ElectricCar
+
+<span class="hljs-comment"># Make lists to hold a fleet of cars.</span>
+gas_fleet = []
+electric_fleet = []
+
+<span class="hljs-comment"># Make 500 gas cars and 250 electric cars.</span>
+<span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> range(<span class="hljs-number">500</span>):
+    car = Car(<span class="hljs-string">&apos;ford&apos;</span>, <span class="hljs-string">&apos;focus&apos;</span>, <span class="hljs-number">2016</span>)
+    gas_fleet.append(car)
+<span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> range(<span class="hljs-number">250</span>):
+    ecar = ElectricCar(<span class="hljs-string">&apos;nissan&apos;</span>, <span class="hljs-string">&apos;leaf&apos;</span>, <span class="hljs-number">2016</span>)
+    electric_fleet.append(ecar)
+
+<span class="hljs-comment"># Fill the gas cars, and charge electric cars.</span>
+<span class="hljs-keyword">for</span> car <span class="hljs-keyword">in</span> gas_fleet:
+    car.fill_tank()
+<span class="hljs-keyword">for</span> ecar <span class="hljs-keyword">in</span> electric_fleet:
+    ecar.charge()
+
+print(<span class="hljs-string">&quot;Gas cars:&quot;</span>, len(gas_fleet))
+print(<span class="hljs-string">&quot;Electric cars:&quot;</span>, len(electric_fleet))
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter_004.html" class="navigation navigation-prev " aria-label="Previous page: 函数Functions">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter_006.html" class="navigation navigation-next " aria-label="Next page: 文件和异常">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"类Class","level":"1.8","depth":1,"next":{"title":"文件和异常","level":"1.9","depth":1,"path":"chapter_006.md","ref":"chapter_006.md","articles":[]},"previous":{"title":"函数Functions","level":"1.7","depth":1,"path":"chapter_004.md","ref":"chapter_004.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter_005.md","mtime":"2019-12-08T11:54:02.809Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-08T12:33:52.039Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

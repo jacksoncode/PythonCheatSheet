@@ -1,0 +1,432 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>文件和异常 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="chapter_005.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter_000.html">
+            
+                <a href="chapter_000.html">
+            
+                    
+                    综述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter_001.html">
+            
+                <a href="chapter_001.html">
+            
+                    
+                    列表List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter_002.html">
+            
+                <a href="chapter_002.html">
+            
+                    
+                    字典Dictionaries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter_003.html">
+            
+                <a href="chapter_003.html">
+            
+                    
+                    if语句和while循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="chapter_004.html">
+            
+                <a href="chapter_004.html">
+            
+                    
+                    函数Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="chapter_005.html">
+            
+                <a href="chapter_005.html">
+            
+                    
+                    类Class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="chapter_006.html">
+            
+                <a href="chapter_006.html">
+            
+                    
+                    文件和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >文件和异常</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6587;&#x4EF6;&#x548C;&#x5F02;&#x5E38;">&#x6587;&#x4EF6;&#x548C;&#x5F02;&#x5E38;</h1>
+<h4 id="&#x4EC0;&#x4E48;&#x662F;&#x6587;&#x4EF6;&#xFF1F;&#x4EC0;&#x4E48;&#x662F;&#x5F02;&#x5E38;&#xFF1F;">&#x4EC0;&#x4E48;&#x662F;&#x6587;&#x4EF6;&#xFF1F;&#x4EC0;&#x4E48;&#x662F;&#x5F02;&#x5E38;&#xFF1F;</h4>
+<p>&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x4ECE;&#x6587;&#x4EF6;&#x4E2D;&#x8BFB;&#x53D6;&#x4FE1;&#x606F;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x6570;&#x636E;&#x5199;&#x5165;&#x6587;&#x4EF6;&#x3002;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5404;&#x79CD;&#x4FE1;&#x606F;&#xFF0C;&#x628A;&#x6587;&#x672C;&#x5199;&#x5165;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x628A;Python &#x7ED3;&#x6784;&#x4F53;&#xFF08;&#x5982;&#x5217;&#x8868;&#xFF09;&#x5B58;&#x50A8;&#x5728;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+<p>&#x5F02;&#x5E38;&#x662F;&#x5E2E;&#x52A9;&#x7A0B;&#x5E8F;&#x4EE5;&#x9002;&#x5F53;&#x65B9;&#x5F0F;&#x54CD;&#x5E94;&#x9519;&#x8BEF;&#x7684;&#x7279;&#x6B8A;&#x5BF9;&#x7B56;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x5C1D;&#x8BD5;&#x6253;&#x5F00;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5F02;&#x5E38;&#x6765;&#x663E;&#x793A;&#x5E26;&#x6709;&#x63D0;&#x793A;&#x6027;&#x7684;&#x9519;&#x8BEF;&#x6D88;&#x606F;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x8BA9;&#x7A0B;&#x5E8F;&#x5D29;&#x6E83;&#x3002;</p>
+<h4 id="&#x8BFB;&#x53D6;&#x6587;&#x4EF6;">&#x8BFB;&#x53D6;&#x6587;&#x4EF6;</h4>
+<blockquote>
+<p>&#x8981;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#xFF0C;&#x7A0B;&#x5E8F;&#x9700;&#x8981;&#x5148;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x7684;&#x5168;&#x90E8;&#x5185;&#x5BB9;&#xFF0C;&#x6216;&#x8005;&#x9010;&#x884C;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x3002; with &#x8BED;&#x53E5;&#x786E;&#x4FDD;&#x5728;&#x7A0B;&#x5E8F;&#x8BBF;&#x95EE;&#x5B8C;&#x6587;&#x4EF6;&#x540E;&#x8BE5;&#x6587;&#x4EF6;&#x5DF2;&#x6B63;&#x786E;&#x5173;&#x95ED;&#x3002;</p>
+</blockquote>
+<p>&#x4E00;&#x6B21;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x7684;&#x5168;&#x90E8;&#x5185;&#x5BB9;</p>
+<pre><code class="lang-py">filename = <span class="hljs-string">&apos;siddhartha.txt&apos;</span>
+<span class="hljs-keyword">with</span> open(filename) <span class="hljs-keyword">as</span> f_obj:
+    contents = f_obj.read()
+
+print(contents)
+</code></pre>
+<p>&#x9010;&#x884C;&#x8BFB;&#x53D6;</p>
+<p>&#x4ECE;&#x6587;&#x4EF6;&#x4E2D;&#x8BFB;&#x53D6;&#x7684;&#x6BCF;&#x4E00;&#x884C;&#x5728;&#x884C;&#x5C3E;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x6362;&#x884C;&#x7B26;&#xFF0C;&#x5E76;&#x4E14;&#x6253;&#x5370;&#x51FD;&#x6570;&#x4F1A;&#x6DFB;&#x52A0;&#x5B83;&#x81EA;&#x5DF1;&#x7684;&#x6362;&#x884C;&#x7B26;&#x3002; rstrip()&#x65B9;&#x6CD5;&#x6D88;&#x9664;&#x4E86;&#x6253;&#x5370;&#x5230;&#x7EC8;&#x7AEF;&#x65F6;&#x4F1A;&#x4EA7;&#x751F;&#x7684;&#x989D;&#x5916;&#x7A7A;&#x767D;&#x884C;&#x3002;</p>
+<pre><code class="lang-py">filename = <span class="hljs-string">&apos;siddhartha.txt&apos;</span>
+
+<span class="hljs-keyword">with</span> open(filename) <span class="hljs-keyword">as</span> f_obj:
+    <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> f_obj:
+        print(line.rstrip())
+</code></pre>
+<p>&#x628A;&#x6BCF;&#x884C;&#x5185;&#x5BB9;&#x5B58;&#x50A8;&#x5728;&#x5217;&#x8868;&#x4E2D;</p>
+<pre><code class="lang-py">filename = <span class="hljs-string">&apos;siddhartha.txt&apos;</span>
+
+<span class="hljs-keyword">with</span> open(filename) <span class="hljs-keyword">as</span> f_obj:
+    lines = f_obj.readlines()
+
+<span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> lines:
+    print(line.rstrip())
+</code></pre>
+<h4 id="&#x5199;&#x6587;&#x4EF6;">&#x5199;&#x6587;&#x4EF6;</h4>
+<blockquote>
+<p>&#x5C06;&apos;w&apos;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9; open()&#x53EF;&#x4EE5;&#x544A;&#x8BC9; Python &#x4F60;&#x60F3;&#x5199;&#x5165;&#x6587;&#x4EF6;&#x3002;&#x6CE8;&#x610F;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF0C;&#x8FD9;&#x5C06;&#x5220;&#x9664;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x4F20;&#x9012;&apos;a&apos;&#x53C2;&#x6570;&#x544A;&#x8BC9; Python &#x4F60;&#x60F3;&#x6DFB;&#x52A0;&#x5185;&#x5BB9;&#x5230;&#x73B0;&#x6709;&#x6587;&#x4EF6;&#x7684;&#x672B;&#x5C3E;&#x3002;</p>
+</blockquote>
+<p>&#x5411;&#x7A7A;&#x6587;&#x4EF6;&#x5199;&#x5165;</p>
+<pre><code class="lang-py">filename = <span class="hljs-string">&apos;programming.txt&apos;</span>
+
+<span class="hljs-keyword">with</span> open(filename, <span class="hljs-string">&apos;w&apos;</span>) <span class="hljs-keyword">as</span> f:
+    f.write(<span class="hljs-string">&quot;I love programming!&quot;</span>)
+</code></pre>
+<p>&#x5411;&#x7A7A;&#x6587;&#x4EF6;&#x4E2D;&#x5199;&#x5165;&#x591A;&#x884C;&#x5185;&#x5BB9;</p>
+<pre><code class="lang-py">filename = <span class="hljs-string">&apos;programming.txt&apos;</span>
+
+<span class="hljs-keyword">with</span> open(filename, <span class="hljs-string">&apos;w&apos;</span>) <span class="hljs-keyword">as</span> f:
+    f.write(<span class="hljs-string">&quot;I love programming!\n&quot;</span>)
+    f.write(<span class="hljs-string">&quot;I love creating new games.\n&quot;</span>)
+</code></pre>
+<p>&#x6DFB;&#x52A0;&#x5230;&#x6587;&#x4EF6;&#x672B;&#x5C3E;</p>
+<pre><code class="lang-py">filename = <span class="hljs-string">&apos;programming.txt&apos;</span>
+
+<span class="hljs-keyword">with</span> open(filename, <span class="hljs-string">&apos;a&apos;</span>) <span class="hljs-keyword">as</span> f:
+    f.write(<span class="hljs-string">&quot;I also love working with data.\n&quot;</span>)
+    f.write(<span class="hljs-string">&quot;I love making apps as well.\n&quot;</span>)
+</code></pre>
+<h4 id="&#x6587;&#x4EF6;&#x8DEF;&#x5F84;">&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</h4>
+<blockquote>
+<p>&#x5F53; Python &#x8FD0;&#x884C; open()&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x6267;&#x884C;&#x7684;&#x7A0B;&#x5E8F;&#x4F4D;&#x4E8E;&#x54EA;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#xFF0C; open()&#x51FD;&#x6570;&#x5C31;&#x5728;&#x54EA;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x67E5;&#x627E;&#x6587;&#x4EF6;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x4ECE;&#x5B50;&#x6587;&#x4EF6;&#x5939;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x3002;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x6253;&#x5F00;&#x7CFB;&#x7EDF;&#x4E0A;&#x7684;&#x4EFB;&#x4F55;&#x6587;&#x4EF6;&#x3002;</p>
+</blockquote>
+<p>&#x4ECE;&#x5B50;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x6253;&#x5F00;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-py">f_path = <span class="hljs-string">&quot;text_files/alice.txt&quot;</span>
+<span class="hljs-keyword">with</span> open(f_path) <span class="hljs-keyword">as</span> f_obj:
+    lines = f_obj.readlines()
+
+<span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> lines:
+    print(line.rstrip())
+</code></pre>
+<p>&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x6253;&#x5361;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-py">f_path = <span class="hljs-string">&quot;/home/ehmatthes/books/alice.txt&quot;</span>
+
+<span class="hljs-keyword">with</span> open(f_path) <span class="hljs-keyword">as</span> f_obj:
+    lines = f_obj.readlines()
+</code></pre>
+<p>&#x5728; windows &#x4E2D;&#x6253;&#x5F00;&#x6587;&#x4EF6;</p>
+<p>Windows &#x6709;&#x65F6;&#x4F1A;&#x9519;&#x8BEF;&#x5730;&#x7F16;&#x8BD1;&#x6B63;&#x659C;&#x6760;&#x3002;&#x5982;&#x679C;&#x9047;&#x5230;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x8BF7;&#x5728;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x4E2D;&#x4F7F;&#x7528;&#x53CD;&#x659C;&#x6760;&#x3002;</p>
+<pre><code class="lang-py">f_path = <span class="hljs-string">&quot;C:\Users\ehmatthes\books\alice.txt&quot;</span>
+
+<span class="hljs-keyword">with</span> open(f_path) <span class="hljs-keyword">as</span> f_obj:
+    lines = f_obj.readlines()
+</code></pre>
+<h4 id="try-except-&#x5F02;&#x5E38;&#x5904;&#x7406;">try-except &#x5F02;&#x5E38;&#x5904;&#x7406;</h4>
+<blockquote>
+<p>&#x5F53;&#x4F60;&#x8BA4;&#x4E3A;&#x53EF;&#x80FD;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7F16;&#x5199; try-except &#x7A0B;&#x5E8F;&#x6765;&#x5904;&#x7406;&#x53EF;&#x80FD;&#x5F15;&#x53D1;&#x7684;&#x5F02;&#x5E38;&#x3002; try &#x7A0B;&#x5E8F;&#x544A;&#x8BC9; Python &#x5C1D;&#x8BD5;&#x8FD0;&#x884C;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x800C;except &#x7A0B;&#x5E8F;&#x544A;&#x8BC9; Python &#x5982;&#x679C;&#x4EE3;&#x7801;&#x5BFC;&#x81F4;&#x67D0;&#x79CD;&#x7279;&#x5B9A;&#x7C7B;&#x578B;&#x7684;&#x9519;&#x8BEF;&#x8BE5;&#x600E;&#x4E48;&#x505A;&#x3002;</p>
+</blockquote>
+<p>&#x5904;&#x7406; ZeroDivisionError &#x5F02;&#x5E38;</p>
+<pre><code class="lang-py"><span class="hljs-keyword">try</span>:
+    print(<span class="hljs-number">5</span>/<span class="hljs-number">0</span>)
+<span class="hljs-keyword">except</span> ZeroDivisionError:
+    print(<span class="hljs-string">&quot;You can&apos;t divide by zero!&quot;</span>)
+</code></pre>
+<p>&#x5904;&#x7406; FileNotFoundError &#x5F02;&#x5E38;</p>
+<pre><code class="lang-py">f_name = <span class="hljs-string">&apos;siddhartha.txt&apos;</span>
+
+<span class="hljs-keyword">try</span>:
+    <span class="hljs-keyword">with</span> open(f_name) <span class="hljs-keyword">as</span> f_obj:
+        lines = f_obj.readlines()
+<span class="hljs-keyword">except</span> FileNotFoundError:
+    msg = <span class="hljs-string">&quot;Can&apos;t find file {0}.&quot;</span>.format(f_name)
+    print(msg)
+</code></pre>
+<h4 id="&#x77E5;&#x9053;&#x8981;&#x5904;&#x7406;&#x7684;&#x662F;&#x4EC0;&#x4E48;&#x5F02;&#x5E38;">&#x77E5;&#x9053;&#x8981;&#x5904;&#x7406;&#x7684;&#x662F;&#x4EC0;&#x4E48;&#x5F02;&#x5E38;</h4>
+<blockquote>
+<p>&#x5199;&#x7A0B;&#x5E8F;&#x65F6;&#x5F88;&#x96BE;&#x77E5;&#x9053;&#x5904;&#x7406;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x5F02;&#x5E38;&#x3002;&#x5148;&#x8BD5;&#x8BD5;&#x5728;&#x6CA1;&#x6709; try &#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x4F7F;&#x5176;&#x751F;&#x6210;&#x9519;&#x8BEF;&#x3002;&#x6839;&#x636E;&#x53CD;&#x9988;&#x7684;&#x9519;&#x8BEF;&#x6765;&#x627E;&#x5230;&#x9700;&#x8981;&#x5904;&#x7406;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x5F02;&#x5E38;&#x3002;</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter_005.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 类Class">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"文件和异常","level":"1.9","depth":1,"previous":{"title":"类Class","level":"1.8","depth":1,"path":"chapter_005.md","ref":"chapter_005.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter_006.md","mtime":"2019-12-08T12:00:43.244Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-08T12:33:52.039Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
