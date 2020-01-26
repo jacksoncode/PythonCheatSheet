@@ -207,7 +207,6 @@ for number in fav_numbers.values():
 ````python
 name = input("What's your name? ")
 print("Hello, " + name + "!")
-
 ````
 
 #### while循环
@@ -216,12 +215,11 @@ print("Hello, " + name + "!")
 
 一个简单的while循环
 
-````pytho
+````python
 current_value = 1
 while current_value <= 5:
     print(current_value)
     current_value += 1
-
 ````
 
 用户决定什么时候退出
@@ -231,7 +229,6 @@ msg = ''
 while msg != 'quit':
     msg = input("What's your message? ")
     print(msg)
-
 ````
 
 #### 函数
@@ -245,7 +242,6 @@ def greet_user():
     """Display a personalized greeting."""
     print("Hello!")
 greet_user()
-
 ````
 
 传递一个实参（argument）
@@ -255,7 +251,6 @@ def greet_user(username):
     """Display a personalized greeting."""
     print("Hello, " + username + "!")
 greet_user('Jesse')
-
 ````
 
 形参（parameter）的默认值
@@ -266,7 +261,6 @@ def make_pizza(topping='bacon'):
     print("Have a " + topping + " pizza!")
 make_pizza()
 make_pizza('pepperoni')
-
 ````
 
 返回一个值sum
@@ -277,7 +271,6 @@ def add_numbers(x, y):
     return x + y
 sum = add_numbers(3, 5)
 print(sum)
-
 ````
 
 #### 类
@@ -301,7 +294,6 @@ my_dog = Dog('Peso')
 
 print(my_dog.name + " is a great dog.")
 my_dog.sit()
-
 ````
 
 继承Inheritance
@@ -322,7 +314,6 @@ my_dog = SARDog('Willie')
 print(my_dog.name + " is a search dog.")
 my_dog.sit()
 my_dog.search()
-
 ````
 
 #### 学以致用
@@ -344,7 +335,6 @@ with open(filename) as file_object:
 
 for line in lines:
     print(line)
-
 ````
 
 向文件中写（覆盖掉之前的内容）
@@ -353,7 +343,6 @@ for line in lines:
 filename = 'journal.txt'
 with open(filename, 'w') as file_object:
     file_object.write("I love programming.")
-
 ````
 
 向文件中添加（不覆盖之前的内容）
@@ -362,7 +351,6 @@ with open(filename, 'w') as file_object:
 filename = 'journal.txt'
 with open(filename, 'a') as file_object:
     file_object.write("\nI love programming.")
-
 ````
 
 #### 异常处理 Exceptions
@@ -381,7 +369,6 @@ except ValueError:
     print("Please try again.")
 else:
     print("Your tickets are printing.")
-
 ````
 
 #### Python 的佛性
@@ -535,7 +522,6 @@ print(sorted(users， reverse=True))
 
 ````python
 users.reverse()
-
 ````
 
 #### 遍历列表
@@ -548,7 +534,6 @@ users.reverse()
 ````python
 for user in users:
     print(user)
-
 ````
 
 为每一个元素打印一条信息，循环完成后在打印一条单独的信息
@@ -558,7 +543,6 @@ for user in users:
     print("Welcome, " + user + "!")
 
 print("Welcome, we're glad to see you all!")
-
 ````
 
 #### range()函数
@@ -570,7 +554,6 @@ print("Welcome, we're glad to see you all!")
 ````python
 for number in range(1001):
     print(number)
-
 ````
 
 打印 1 到 1000 的数字
@@ -578,14 +561,12 @@ for number in range(1001):
 ````python
 for number in range(1, 1001):
     print(number)
-
 ````
 
 创建一个列表，其元素的值为 1 到 100 万
 
 ````python
 numbers = list(range(1, 1000001))
-
 ````
 
 #### 简单的数据统计
@@ -597,7 +578,6 @@ numbers = list(range(1, 1000001))
 ````python
 ages = [93, 99, 66, 17, 85, 1, 35, 82, 2, 77]
 youngest = min(ages)
-
 ````
 
 找出最大值
@@ -605,7 +585,6 @@ youngest = min(ages)
 ````python
 ages = [93, 99, 66, 17, 85, 1, 35, 82, 2, 77]
 youngest = max(ages)
-
 ````
 
 计算所有元素的和
@@ -613,7 +592,6 @@ youngest = max(ages)
 ````python
 ages = [93, 99, 66, 17, 85, 1, 35, 82, 2, 77]
 total_years = sum(ages)
-
 ````
 
 #### 列表截取
@@ -625,21 +603,18 @@ total_years = sum(ages)
 ````python
 finishers = ['kai', 'abe', 'ada', 'gus', 'zoe']
 first_three = finishers[:3]
-
 ````
 
 截取中间的三个元素
 
 ````python
 middle_three = finishers[1:4]
-
 ````
 
 截取最后三个元素
 
 ````python
 last_three = finishers[-3:]
-
 ````
 
 #### 复制列表
@@ -651,7 +626,6 @@ last_three = finishers[-3:]
 ````python
 finishers = ['kai', 'abe', 'ada', 'gus', 'zoe']
 copy_of_finishers = finishers[:]
-
 ````
 
 #### 列表生成式
@@ -666,14 +640,12 @@ squares = []
     for x in range(1, 11):
         square = x ** 2
         squares.append(square)
-
 ````
 
 使用列表推导式，生成一个平方数的列表
 
 ````python
 squares = [x**2 for x in range(1, 11)]
-
 ````
 
 使用 for 循环，把列表中的小写字母转换成大写字母
@@ -684,7 +656,6 @@ names = ['kai', 'abe', 'ada', 'gus', 'zoe']
 upper_names = []
 for name in names:
     upper_names = [name.append(name.upper())]
-
 ````
 
 使用列表推导式，把列表中的小写字母转换成大写字母
@@ -693,7 +664,6 @@ for name in names:
 names = ['kai', 'abe', 'ada', 'gus', 'zoe']
 
 upper_names = [name.upper() for name in names]
-
 ````
 
 #### 元组 Tuples
@@ -704,7 +674,6 @@ upper_names = [name.upper() for name in names]
 
 ````python
 dimensions = (800, 600)
-
 ````
 
 元组 for 循环
@@ -712,7 +681,6 @@ dimensions = (800, 600)
 ````python
 for dimension in dimensions:
     print(dimensions)
-
 ````
 
 重写覆盖元组
@@ -721,7 +689,6 @@ for dimension in dimensions:
 dimensions = (800, 600)
 print(dimensions)
 dimensions = (1200, 900)
-
 ````
 
 #### 代码运行可视化
@@ -749,7 +716,6 @@ for old_dog in old_dogs:
 del dogs[0]
 dogs.remove('peso')
 print(dogs)
-
 ````
 
 #### 代码风格
@@ -1037,7 +1003,6 @@ for name, langs in fav_languages.items():
     print(name + ":")
     for lang in langs:
         print("- " + lang)
-
 ````
 
 #### 创建大量字典
@@ -1063,7 +1028,6 @@ for alien_num in range(1000000):
 num_aliens = len(aliens)
 print("Number of aliens created:")
 print(num_aliens)
-
 ````
 
 ## if语句和while循环
@@ -1273,7 +1237,6 @@ Python2.7 中，使用 raw_input()函数，同 python3 中的 input() 函数
 ````python
 name = raw_input("What's your name? ")
 print("Hello, " + name + ".")
-
 ````
 
 #### While循环
@@ -1287,7 +1250,6 @@ current_number = 1
 while current_number <= 5:
     print(current_number)
     current_number += 1
-
 ````
 
 用户决定何时退出
@@ -1303,7 +1265,6 @@ while message != 'quit':
 
     if message != 'quit':
         print(message)
-
 ````
 
 使用 flag
@@ -1320,7 +1281,6 @@ while active:
         active = False
     else:
         print(message)
-
 ````
 
 使用 break 退出当前循环
@@ -1336,7 +1296,6 @@ while True:
         break
     else:
         print("I've been to " + city + "!")
-
 ````
 
 #### 退出循环
@@ -1367,7 +1326,6 @@ while True:
 print("\nYour team:")
 for player in players:
     print(player)
-
 ````
 
 #### 避免无限循环
@@ -1380,7 +1338,6 @@ for player in players:
 while True:
     name = input("\nWho are you? ")
     print("Nice to meet you, " + name + "!")
-
 ````
 
 #### 删除列表中某个值的所有实例
@@ -1398,7 +1355,6 @@ while 'cat' in pets:
     pets.remove('cat')
 
 print(pets)
-
 ````
 
 ## 函数Functions
@@ -1457,7 +1413,7 @@ describe_pet('dog', 'willie')
 
 使用关键字实参
 
-````py
+````python
 def describe_pet(animal, name):
     """Display information about a pet."""
     print("\nI have a " + animal + ".")
@@ -1473,7 +1429,7 @@ describe_pet(name='willie', animal='dog')
 
 使用默认参数值
 
-````py
+````python
 def describe_pet(name, animal='dog'):
     """Display information about a pet."""
     print("\nI have a " + animal + ".")
@@ -1485,7 +1441,7 @@ describe_pet('willie')
 
 使用 None 值时实参可有可无
 
-````py
+````python
 def describe_pet(animal, name=None):
     """Display information about a pet."""
     print("\nI have a " + animal + ".")
@@ -1503,7 +1459,7 @@ describe_pet('snake')
 
 其中 title() 方法返回"标题化"的字符串,就是说所有单词都是以大写开始
 
-````py
+````python
 def get_full_name(first, last):
     """Return a neatly formatted full name."""
     full_name = first + ' ' + last
@@ -1515,7 +1471,7 @@ print(musician)
 
 返回一个字典
 
-````py
+````python
 def build_person(first, last):
     """Return a dictionary of information
     about a person.
@@ -1529,7 +1485,7 @@ print(musician)
 
 返回一个字典，其中有些值为空
 
-````py
+````python
 def build_person(first, last, age=None):
     """Return a dictionary of information
     about a person.
@@ -1552,7 +1508,7 @@ print(musician)
 
 将列表作为参数传递
 
-````py
+````python
 def greet_users(names):
     """Print a simple greeting to everyone."""
     for name in names:
@@ -1567,7 +1523,7 @@ greet_users(usernames)
 
 以下示例将 unprinted 和 printed 列表发送给函数打印。unprinted 列表被清空， printed 列表被填充。
 
-````py
+````python
 def print_models(unprinted, printed):
     """3d print a set of models."""
     while unprinted:
@@ -1588,7 +1544,7 @@ print("Printed:", printed)
 防止函数修改列表
 以下示例与前一个示例相同，只是在调用 print_models()后，unprinted 列表未更改。
 
-````py
+````python
 def print_models(unprinted, printed):
     """3d print a set of models."""
     while unprinted:
@@ -1611,7 +1567,7 @@ print("Printed:", printed)
 
 传递任意数量的实参
 
-````py
+````python
 def make_pizza(size, *toppings):
     """Make a pizza."""
     print("\nMaking a " + size + " pizza.")
@@ -1628,7 +1584,7 @@ make_pizza('medium', 'mushrooms', 'peppers',
 
 传递任意数量的关键字实参
 
-````py
+````python
 def build_profile(first, last, **user_info):
     """Build a user's profile dictionary."""
     # Build a dict with the required keys.
@@ -1660,7 +1616,7 @@ print(user_1)
 
 在模块 File:pizza.py 中存储程序
 
-````py
+````python
 def make_pizza(size, *toppings):
     """Make a pizza."""
     print("\nMaking a " + size + " pizza.")
@@ -1673,7 +1629,7 @@ def make_pizza(size, *toppings):
 
 模块中的每个函数在整个程序中都可以起作用
 
-````py
+````python
 import pizza
 
 pizza.make_pizza('medium', 'pepperoni')
@@ -1686,36 +1642,33 @@ pizza.make_pizza('small', 'bacon', 'pineapple')
 
 格式为 from 文件名 inmport 文件中的函数名
 
-````py
+````python
 from pizza import make_pizza
 
 make_pizza('medium', 'pepperoni')
 make_pizza('small', 'bacon', 'pineapple')
-
 ````
 
 给模块起个别名
 
 as 后是别名，一般别名都是缩写
 
-````py
+````python
 from pizza import make_pizza as mp
 
 mp('medium', 'pepperoni')
 mp('small', 'bacon', 'pineapple')
-
 ````
 
 导入模块中的所有函数
 
 最好不要这样做，但是当你在别人的代码中看到它时你就会想到，这可能会导致命名冲突，进而产生错误。
 
-````py
+````python
 from pizza import *
 
 make_pizza('medium', 'pepperoni')
 make_pizza('small', 'bacon', 'pineapple')
-
 ````
 
 
@@ -1731,7 +1684,7 @@ make_pizza('small', 'bacon', 'pineapple')
 
 Car 类
 
-````py
+````python
 class Car():
     """A simple attempt to model a car."""
 
@@ -1757,13 +1710,13 @@ class Car():
 
 创建一个类的对象
 
-````py
+````python
 my_car = Car('audi', 'a4', 2016)
 ````
 
 访问属性值
 
-````py
+````python
 print(my_car.make)
 print(my_car.model)
 print(my_car.year)
@@ -1771,14 +1724,14 @@ print(my_car.year)
 
 调用方法
 
-````py
+````python
 my_car.fill_tank()
 my_car.drive()
 ````
 
 创建多个对象
 
-````py
+````python
 my_car = Car('audi', 'a4', 2016)
 my_old_car = Car('subaru', 'outback', 2013)
 my_truck = Car('toyota', 'tacoma', 2010)
@@ -1790,14 +1743,14 @@ my_truck = Car('toyota', 'tacoma', 2010)
 
 直接修改属性的值
 
-````py
+````python
 my_new_car = Car('audi', 'a4', 2016)
 my_new_car.fuel_level = 5
 ````
 
 写一个方法更新属性值
 
-````py
+````python
 def update_fuel_level(self, new_level):
     """Update the fuel level."""
     if new_level <= self.fuel_capacity:
@@ -1808,7 +1761,7 @@ def update_fuel_level(self, new_level):
 
 写一个方法增加属性值
 
-````py
+````python
 def add_fuel(self, amount):
     """Add fuel to the tank."""
     if (self.fuel_level + amount
@@ -1829,7 +1782,7 @@ def add_fuel(self, amount):
 
 子类的_init _()方法
 
-````py
+````python
 class ElectricCar(Car):
     """A simple model of an electric car."""
 
@@ -1846,7 +1799,7 @@ class ElectricCar(Car):
 
 向子类中添加新的方法
 
-````py
+````python
 class ElectricCar(Car):
     --snip--
     def charge(self):
@@ -1857,7 +1810,7 @@ class ElectricCar(Car):
 
 使用子类和父类方法
 
-````py
+````python
 my_ecar = ElectricCar('tesla', 'model s', 2016)
 my_ecar.charge()
 my_ecar.drive()
@@ -1871,7 +1824,7 @@ my_ecar.drive()
 
 覆盖父类
 
-````py
+````python
 class ElectricCar(Car):
     --snip--
     def fill_tank(self):
@@ -1883,7 +1836,7 @@ class ElectricCar(Car):
 
 Battery 类
 
-````py
+````python
 class Battery():
     """A battery for an electric car."""
 
@@ -1903,7 +1856,7 @@ class Battery():
 
 使用实例作为属性
 
-````py
+````python
 class ElectricCar(Car):
     --snip--
 
@@ -1922,7 +1875,7 @@ class ElectricCar(Car):
 
 使用实例
 
-````py
+````python
 my_ecar = ElectricCar('tesla', 'model x', 2016)
 
 my_ecar.charge()
@@ -1936,7 +1889,7 @@ my_ecar.drive()
 
 在文件 car.py 中存储类
 
-````py
+````python
 """Represent gas and electric cars."""
 
 class Car():
@@ -1954,7 +1907,7 @@ class ElectricCar(Car):
 
 从模块 car.py 中导入各个类
 
-````py
+````python
 from car import Car, ElectricCar
 
 my_beetle = Car('volkswagen', 'beetle', 2016)
@@ -1964,12 +1917,11 @@ my_beetle.drive()
 my_tesla = ElectricCar('tesla', 'model s', 2016)
 my_tesla.charge()
 my_tesla.drive()
-
 ````
 
 导入整个模块
 
-````py
+````python
 import car
 
 my_beetle = car.Car('volkswagen', 'beetle', 2016)
@@ -1979,52 +1931,46 @@ my_beetle.drive()
 my_tesla = car.ElectricCar('tesla', 'model s', 2016)
 my_tesla.charge()
 my_tesla.drive()
-
 ````
 
 导入模块的所有类
 （ 不要这样做，看到的时候知道是什么就可以了）
 
-````py
+````python
 from car import *
 
 my_beetle = Car('volkswagen', 'beetle', 2016)
-
 ````
 
 #### Python2.7类
 
 类是从对象继承来的
 
-````py
+````python
 class ClassName(object):
-
 ````
 
 Car class
 
-````py
+````python
 class Car(object):
-
 ````
 
 子类的_init_()方法是不一样的
 
-````py
+````python
 class ChildClassName(ParentClass):
     def __init__(self):
         super(ClassName, self).__init__()
-
 ````
 
 ElectricCar class
 
-````py
+````python
 class ElectricCar(Car):
     def __init__(self, make, model, year):
         super(ElectricCar, self).__init__(
             make, model, year)
-
 ````
 
 #### 列表中存储对象
@@ -2034,7 +1980,7 @@ class ElectricCar(Car):
 
 一系列 rental cars
 
-````py
+````python
 from car import Car, ElectricCar
 
 # Make lists to hold a fleet of cars.
@@ -2057,7 +2003,6 @@ for ecar in electric_fleet:
 
 print("Gas cars:", len(gas_fleet))
 print("Electric cars:", len(electric_fleet))
-
 ````
 
 
@@ -2076,7 +2021,7 @@ print("Electric cars:", len(electric_fleet))
 
 一次读取文件的全部内容
 
-````py
+````python
 filename = 'siddhartha.txt'
 with open(filename) as f_obj:
     contents = f_obj.read()
@@ -2088,7 +2033,7 @@ print(contents)
 
 从文件中读取的每一行在行尾都有一个换行符，并且打印函数会添加它自己的换行符。 rstrip()方法消除了打印到终端时会产生的额外空白行。
 
-````py
+````python
 filename = 'siddhartha.txt'
 
 with open(filename) as f_obj:
@@ -2098,7 +2043,7 @@ with open(filename) as f_obj:
 
 把每行内容存储在列表中
 
-````py
+````python
 filename = 'siddhartha.txt'
 
 with open(filename) as f_obj:
@@ -2114,7 +2059,7 @@ for line in lines:
 
 向空文件写入
 
-````py
+````python
 filename = 'programming.txt'
 
 with open(filename, 'w') as f:
@@ -2123,7 +2068,7 @@ with open(filename, 'w') as f:
 
 向空文件中写入多行内容
 
-````py
+````python
 filename = 'programming.txt'
 
 with open(filename, 'w') as f:
@@ -2133,7 +2078,7 @@ with open(filename, 'w') as f:
 
 添加到文件末尾
 
-````py
+````python
 filename = 'programming.txt'
 
 with open(filename, 'a') as f:
@@ -2147,7 +2092,7 @@ with open(filename, 'a') as f:
 
 从子文件夹中打开文件
 
-````py
+````python
 f_path = "text_files/alice.txt"
 with open(f_path) as f_obj:
     lines = f_obj.readlines()
@@ -2158,7 +2103,7 @@ for line in lines:
 
 使用绝对路径打卡文件
 
-````py
+````python
 f_path = "/home/ehmatthes/books/alice.txt"
 
 with open(f_path) as f_obj:
@@ -2169,7 +2114,7 @@ with open(f_path) as f_obj:
 
 Windows 有时会错误地编译正斜杠。如果遇到这种情况，请在文件路径中使用反斜杠。
 
-````py
+````python
 f_path = "C:\Users\ehmatthes\books\alice.txt"
 
 with open(f_path) as f_obj:
@@ -2182,7 +2127,7 @@ with open(f_path) as f_obj:
 
 处理 ZeroDivisionError 异常
 
-````py
+````python
 try:
     print(5/0)
 except ZeroDivisionError:
@@ -2191,7 +2136,7 @@ except ZeroDivisionError:
 
 处理 FileNotFoundError 异常
 
-````py
+````python
 f_name = 'siddhartha.txt'
 
 try:
@@ -2205,3 +2150,4 @@ except FileNotFoundError:
 #### 知道要处理的是什么异常
 
 > 写程序时很难知道处理什么样的异常。先试试在没有 try 的情况下编写代码，并使其生成错误。根据反馈的错误来找到需要处理什么样的异常。
+
